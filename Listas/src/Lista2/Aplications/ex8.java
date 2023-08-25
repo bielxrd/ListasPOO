@@ -7,7 +7,7 @@ import java.util.Scanner;
 import Lista2.Entities.Pessoa;
 
 public class ex8 {
-    public static void main(String[] args) {
+    public static void main(String[] args) { //ex8
         Scanner ler = new Scanner(System.in);
 
         DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
