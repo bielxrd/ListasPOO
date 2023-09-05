@@ -21,14 +21,19 @@ public class ControlarElevador extends Elevador {
 
     public void sair() {
         if (getQuantidadePessoas() != 0) {
-            setQuantidadePessoas(getCapacidade());
+            setQuantidadePessoas(getQuantidadePessoas() - 1);
+        } else {
+            System.out.println("Nao ha ninguem no elevador.");
         }
     }
 
     public void subirAndar() {
         if (getAndar() < getAndares()) {
             setAndar(getAndar() + 1);
+        } else {
+            System.out.println("Impossivel subir mais.");
         }
+
     }
 
     public void descerAndar() {
